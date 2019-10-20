@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4DA5F4" />
+    <meta name="csrf-token" />
+    <title>- Hackathon Starter</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <!-- <script src="./script.js"></script> -->
+    <div class="container">
+        <!-- multistep form -->
+        <form id="msform" method="POST">
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active">Account Setup</li>
+                <li>Personal Profiles</li>
+                <li>Emergency Details</li>
+                <li>Health Care Details</li>
+                <li>Medical history</li>
+            </ul>
+            <!-- fieldsets -->
+            <!-- <fieldset> -->
+            <h2 class="fs-title">Create your account</h2>
+            <h3 class="fs-subtitle">This is step 1</h3>
+            <input type="text" name="email" placeholder="Email" />
+            <input type="password" name="pass" placeholder="Password" />
+            <input type="password" name="cpass" placeholder="Confirm Password" />
+            <input type="button" name="next" class="next action-button" value="Next" /> <br>
+            <!-- </fieldset> -->
+
+            <!-- <fieldset> -->
+            <h2 class="fs-title">Personal Details</h2>
+            <h3 class="fs-subtitle">Your personal information</h3>
+            <input type="text" name="firstname" placeholder="Firstname" />
+            <input type="text" name="lastname" placeholder="Lastname" />
+            <textarea name="address" placeholder="Address"></textarea>
+            <input type="text" name="contact-number" placeholder="+Contact" />
+            <h3 class="fs-subtitle">Your gender</h3>
+            <input type="radio" name="gender" value="male">Male<br>
+            <input type="radio" name="gender" value="female">Female<br>
+            <input type="radio" name="gender" value="other">Other<br>
+            <!-- <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+
+            <fieldset> -->
+            <h2 class="fs-title">Emergency Contact</h2>
+            <h3 class="fs-subtitle">In case of Emergency</h3>
+            <input type="text" name="firstname" placeholder="Firstname" />
+            <input type="text" name="lastname" placeholder="Lastname" />
+            <input type="text" name="address" placeholder="Address" />
+            <input type="text" name="contact-number" placeholder="+Contact" />
+            <input type="text" name="relationship" placeholder="Relationship" /><br>
+            <!-- <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+
+
+            <fieldset> -->
+            <h2 class="fs-title">Health Care Details</h2>
+            <h3 class="fs-subtitle">
+                For every healthcare cover instant request
+            </h3>
+            <input type="text" name="policy number" placeholder="XXX00000000" />
+            <input type="date" name="insured DOB" />
+
+            <!-- <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+
+            <fieldset> -->
+            <h2 class="fs-title">Medical Details</h2>
+            <h3 class="fs-subtitle">For every medical requirement</h3>
+            <input type="text" name="blood group" placeholder="A+" />
+            <input type="checkbox" name="illness1" value="asthma" /> Have you ever been diagonosed with asthma<br />
+            <input type="checkbox" name="illness1" value="diabetes" /> Are you diagonosed with Diabetes<br />
+            <h3 class="fs-subtitle">Do you have any allergies</h3>
+            <select name="allergies">
+                <option value="dust"> Dust</option>
+                <option value="pollen">Pollen</option>
+                <option value="petdander">Pet dander</option>
+                <option value="beestings">Bee Stings </option>
+                <option value="latex">Latex </option>
+            </select> <br>
+
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="button" name="submit" class="submit action-button" value="Submit" />
+            <button type="submit" formmethod="post"></button>
+            <!-- </fieldset> -->
+        </form>
+    </div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="./popper.js"></script>
+    <!-- <script src="/js/lib/jquery.min.js"></script>
+    <script src="/js/lib/popper.min.js"></script>
+    <script src="/js/lib/bootstrap.min.js"></script> -->
+    <script src="script.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID-->
+
+</body>
+
+</html>

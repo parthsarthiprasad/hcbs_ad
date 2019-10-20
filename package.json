@@ -1,0 +1,33 @@
+{
+  "name": "restfulapi",
+  "version": "1.0.0",
+  "description": "the project is to create a shopping cart with cloud connection to mongo server with basic functionality of authentication , geolocation and to create a working shopping cart.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "parthsarthiprasad",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "mongoose": "^5.6.10",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parthsarthiprasad/ankserver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/parthsarthiprasad/ankserver/issues"
+  },
+  "homepage": "https://github.com/parthsarthiprasad/ankserver#readme"
+}
